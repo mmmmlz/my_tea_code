@@ -1,0 +1,17 @@
+{
+ "instances": [
+   {
+     "instance_count": 1,
+     "resources": [
+       {"name": "cpus", "type": "SCALAR", "scalar": {"value": 8.0}},
+       {"name": "mem", "type": "SCALAR", "scalar": {"value": 32096.0}},
+       {"name": "disk", "type": "SCALAR", "scalar": {"value": 100.0}},
+       {"name": "gpus", "type": "SCALAR", "scalar": {"value": 2.0}}
+       ],
+ "constraints": [
+      {"subject": "gpu", "verb": "IS", "object" : "v100"}
+    ]
+  }],
+ 
+"image": "docker-registry.qiyi.virtual/jarvis-public/conda-pytorch-1.4.0-py36:v1.0"
+}
